@@ -20,12 +20,12 @@ switch ($choice) {
         
     }
     '2' {
-        Echo "Starting Elementary setup process:"
+        Echo "Starting Junior High setup process:"
         iex (curl alexdoesvoices.github.io/Dooracess-installer/school/jh/setup.ps1)
     }
     '3' {
-        Echo "Starting Elementary setup process:"
-        iex (curl lexdoesvoices.github.io/Dooracess-installer/school/hs/setup.ps1)
+        Echo "Starting HighSchool setup process:"
+        iex (curl alexdoesvoices.github.io/Dooracess-installer/school/hs/setup.ps1)
     }
     'Q' {
         Write-Host "Exiting..." -ForegroundColor Gray

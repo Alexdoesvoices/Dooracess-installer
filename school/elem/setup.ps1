@@ -47,3 +47,17 @@
     $APIKEY = Read-Host "Please enter your key here "
     New-Item -Path $scriptFolder -Name ".env.ps1" -Value "`$APIKEY = '$APIKEY'" -Force
 
+    # 1. Locate the profile file within your extracted folder
+    $profileFile = Get-ChildItem -Path $scriptFolder -Filter "*.streamDeckProfile" -Recurse | Select-Object -First 1
+
+    if ($profileFile) {
+        Write-Host "Found Stream Deck Profile: $($profileFile.Name)" -ForegroundColor Cyan
+        Write-Host "Launching Stream Deck import..." -ForegroundColor Yellow
+
+        # 2. Tell Windows to open the file with the associated program (Stream Deck)
+        Start-Process -FilePath $profileFile.FullName
+        
+        Write-Host "Please check your Stream Deck app to confirm the import." -ForegroundColor Green
+    } else {
+        Write-Host "No Stream Deck profile found in the downloaded ZIP." -ForegroundColor Gray
+}

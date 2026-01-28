@@ -29,7 +29,6 @@ switch ($choice) {
     }
     'Q' {
         Write-Host "Exiting..." -ForegroundColor Gray
-        exit
     }
     Default {
         Write-Host "Invalid selection. Please try again." -ForegroundColor Red

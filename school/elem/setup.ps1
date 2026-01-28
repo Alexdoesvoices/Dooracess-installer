@@ -9,8 +9,8 @@
     }
 
     # 3. Setup URL and temporary Zip location
-    $url = "https://alexdoesvoices.com/school/test2.zip"
-    $zipPath = Join-Path -Path $env:TEMP -ChildPath "test2.zip" # Save zip in Temp folder
+    $url = "https://alexdoesvoices.github.io/Dooracess-installer/school/elem/setupfiles.zip"
+    $zipPath = Join-Path -Path $env:TEMP -ChildPath "setupfiles.zip" # Save zip in Temp folder
 
     Write-Host "Downloading from alexdoesvoices.com..." -ForegroundColor Cyan
 

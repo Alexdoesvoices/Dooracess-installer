@@ -16,16 +16,16 @@ $choice = Read-Host "Please select an option"
 switch ($choice) {
     '1' {
         Echo "Starting Elementary setup process:"
-        iex (curl alexdoesvoices.com/school/elem/setup.ps1)
+        iex (curl alexdoesvoices.github.io/Dooracess-installer/school/elem/setup.ps1)
         
     }
     '2' {
         Echo "Starting Elementary setup process:"
-        iex (curl alexdoesvoices.com/school/jh/setup.ps1)
+        iex (curl alexdoesvoices.github.io/Dooracess-installer/school/jh/setup.ps1)
     }
     '3' {
         Echo "Starting Elementary setup process:"
-        iex (curl alexdoesvoices.com/school/hs/setup.ps1)
+        iex (curl lexdoesvoices.github.io/Dooracess-installer/school/hs/setup.ps1)
     }
     'Q' {
         Write-Host "Exiting..." -ForegroundColor Gray

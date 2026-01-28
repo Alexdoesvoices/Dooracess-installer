@@ -44,6 +44,6 @@
     Write-Host ""
     Write-Host $spacer -ForegroundColor Green
     Write-Host "This system requires a API key to operate:"
-    $APIKEY = Read-Host "Please enter your key here: "
+    $APIKEY = Read-Host "Please enter your key here "
     New-Item -Path $scriptFolder -Name ".env.ps1" -Value "`$APIKEY = '$APIKEY'" -Force
 
